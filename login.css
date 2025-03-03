@@ -1,0 +1,76 @@
+/*signupandlogin/
+/* Form Section Styling */
+.signup, .login {
+    background: #f8f6f6;
+    text-align: center;
+    padding:0;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup h2, .login h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: green;
+}
+
+.signup-form, .login-form {
+    background: rgb(251, 246, 246);
+    text-align:center;
+    box-align: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px green;
+    border: 2px solid #4caf50;
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-form input, .login-form input {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-form button, .login-form button {
+    background: #007c15;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-form button:hover, .login-form button:hover {
+    background: #019644;
+}
+
+.signup p, .login p {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.signup a, .login a {
+    color: #02b65c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup a:hover, .login a:hover {
+    color: #00db49;
+}

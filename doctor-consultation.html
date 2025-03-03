@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consultation | MediConnect</title>
+    <link rel="stylesheet" href="doctor-consultation.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Consultation</h1>
+        <p>Book an online consultation with top doctors</p>
+    </header>
+
+    <section class="doctor-list">
+        <div class="doctor-card">
+            <img src="./Doctor1.jpg" alt="Doctor">
+            <h3>Dr. Sarah Johnson</h3>
+            <p>Cardiologist | 10 Years Experience</p>
+            <button onclick="bookAppointment('Dr. Sarah Johnson')">Book Appointment</button>
+        </div>
+
+        <div class="doctor-card">
+            <img src="./doctor2.webp" alt="Doctor">
+            <h3>Dr. Mark Wilson</h3>
+            <p>Neurologist | 12 Years Experience</p>
+            <button onclick="bookAppointment('Dr. Mark Wilson')">Book Appointment</button>
+        </div>
+
+        <div class="doctor-card">
+            <img src="./Doctor3.jpg" alt="Doctor">
+            <h3>Dr. Emily Davis</h3>
+            <p>Dermatologist | 8 Years Experience</p>
+            <button onclick="bookAppointment('Dr. Emily Davis')">Book Appointment</button>
+        </div>
+    </section>
+
+    <section id="appointment-section" class="hidden">
+        <h2>Book an Appointment</h2>
+        <p id="selected-doctor"></p>
+        <form id="appointment-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Choose Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Choose Time:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+        <p id="confirmation-message" class="hidden"></p>
+    </section>
+
+    <script src="doctor-consultation.js"></script>
+</body>
+</html

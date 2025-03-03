@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="./MediConnect.png" alt="Logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="doctor-consultation.html" target="_blank">Appointments</a></li>
+                <li><a href="store.html" target="_blank">Medicines</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero_section -->
+    <!-- <div class="cursor"></div> -->
+    <section>
+        <div class="hero-section">
+            <div class="hero-msg">
+                <h1 class="h1" id="typing-text">Welcome To MediConnect</h1>
+                <br>
+                <p class="p1">Your Health, Our priority: Streamline Appointments, Tickets, and Medicines in Just a Few
+                    Clicks!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+        <h1 class="section-title">Our Services</h1>
+        <div class="section-content">
+            <div class="service">
+                <h1 class="section-headings"><a
+                        href="book.html"
+                        target="_blank">Book Your Ticket</a></h1>
+                <p>Book your ticket to check offline by visiting the medical.</p>
+            </div>
+            <div class="service">
+                <h1 class="section-headings"><a
+                        href="doctor-consultation.html"
+                        target="_blank">Doctor Consultation</a></h1>
+                <p>Book a virtual in-person appointment with doctors anytime.</p>
+            </div>
+            <div class="service">
+                <h1 class="section-headings"><a
+                        href="chatbot.html"
+                        target="_blank">Symptom Checker</a></h1>
+                <p>Enter symptoms to get an idea of possible condition.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Book your appointment -->
+    <!-- <h1 class="section-title">Book Your Appointment</h1>
+    <div class="appointment-container">
+        <section class="appoimtment" id="appointment">
+            <form id="appointmentform">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone No.</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="symptoms">Symptoms/Disease Description</label>
+                    <textarea id="symptoms" placeholder="Desribe your symptoms..." required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="input-group">
+                    <label for="hospital">Select Hospital</label>
+                    <select id="hospital" required>
+                        <option value="Apollo">Apollo Hospital</option>
+                        <option value="AIIMS">AIIMS BBSR</option>
+                        <option value="MKCG">MKCG</option>
+                        <option value="City Hospital">City Hospital</option>
+                        <option value="Amity Hospital">Amity Hospital</option>
+                        <option value="Christian hospital">Christian Hospital</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" id="confirmButton">Submit
+                        Appointment</button>
+                Popup Modal -->
+                <!-- <div id="confirmationModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Booking Confirmed!</h2>
+                        <p>Your medical check-up has been successfully booked.</p>
+                        <p>Date: <span id="bookingDate">2025-03-10</span></p>
+                        <p>Time: <span id="bookingTime">10:00 AM</span></p>
+                        <button id="closeModal">Close</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div> --> 
+
+    <!-- About Us Section -->
+    <h1 class="section-title">About Us</h1>
+    <section id="about" class="section about">
+        <div class="container">
+            <p>At <b>MediConnect</b>, we are dedicated to bridging the gap between patients and healthcare facilities by providing smart solutions for common challenges in government medical centers. Our platform aims to streamline patient flow, enhance doctor availability, and ensure adequate medicine supplies through an intuitive and user-friendly interface.
+                <br><br>
+                We believe in leveraging technology to <b>improve healthcare accessibility and efficiency</b>. Our system offers real-time updates, appointment scheduling, and a symptom checker to guide patients toward the right medical assistance.
+                <br><br>
+                Join us in revolutionizing the healthcare experience because everyone deserves <b>seamless and reliable medical care</b>.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <h1 class="section-title">Contact Us</h1>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Symptom Checker -->
+    <!-- <h1 class="section-title">Symptom Checker</h1>
+    <section class="container">
+        <label for="symptom">Enter Your Main Symptom:</label>
+        <input type="text" id="symptom" placeholder="e.g. fever. headache" required>
+
+        <label for="duration">How long have you had this symptom?</label>
+        <select id="duration">
+            <option value="1-2 days">1-2 Days</option>
+            <option value="3-7 days">3-7 Days</option>
+            <option value="More than a week">More than a week</option>
+        </select>
+
+        <label for="description">Describe your symptoms in detail:</label>
+        <textarea id="description" placeholder="Provide more details..."></textarea>
+
+        <button onclick="checkSymptoms()">Check Condition</button>
+        <p id="result"></p>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="foot-panel1">
+            <a href="#">Back to top</a>
+        </div>
+        <hr>
+        <div class="foot-panel2">
+            <ul class="list1">
+                <p><b>MediConnect</b></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">FAQs</a></p>
+                <p><a href="#">Find a Pharmacy</a></p>
+                <p><a href="#">Know Your Health Credits</a></p>
+                <p><a href="#">Terms and Conditions</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Returns & Refunds</a></p>
+                <p><a href="#">Contact us</a></p>
+                <p><a href="#">Careers</a></p>
+            </ul>
+            <ul class="list2">
+                <p><b>Services</b></p>
+                <p><a href="#">Online Doctor Consultation</a></p>
+                <p><a href="#">All Doctors List</a></p>
+                <p><a href="#">Online Medicine Access</a></p>
+                <p><a href="#">Online Ticket Booking</a></p>
+                <p><a href="#">Online Symptom Checker</a></p>
+                <p><a href="#">Online AI Chatbot</a></p>
+            </ul>
+            <ul class="list3">
+                <p><b>Appointments</b></p>
+                <p><a href="#">Desired Doctor</a></p>
+                <p><a href="#">Slot Assignment</a></p>
+                <p><a href="#">Provid Email or SMS</a></p>
+                <p><a href="#">Connection</a></p>
+                <p><a href="#">Connection</a></p>
+                <p><a href="#">Connection</a></p>
+            </ul>
+            <ul class="list4">
+                <p><b>Product Categories</b></p>
+                <p><a href="#">View All Brands</a></p>
+                <p><a href="#">View All Salts</a></p>
+                <p><a href="#">View All Medicines</a></p>
+                <p><a href="#">Personal Care</a></p>
+                <p><a href="#">Baby Care</a></p>
+                <p><a href="#">Nutrition</a></p>
+                <p><a href="#">Help</a></p>
+                <p><a href="#">Help</a></p>
+                <p><a href="#">Help</a></p>
+            </ul>
+        </div>
+        <div class="footpanel3">
+            <div class="copyright">
+                &copy; 2025 MediConnect 25. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

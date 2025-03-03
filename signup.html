@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect - Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Sign Up Section -->
+    <section id="Signup" class="section signup">
+        <div class="container">
+            <h2>Create Your Account</h2>
+            <form action="#" method="POST" class="signup-form">
+                <select id="userType" name="userType">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="button" onclick="redirectTologin()" class="btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </section>
+    <script>
+        function redirectTologin() {
+            const userType = document.getElementById("userType").value;
+            if (userType === "user") {
+                window.location.href = "login.html";
+            } else if (userType === "admin") {
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
